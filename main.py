@@ -4,10 +4,8 @@ import speech_recognition as sr
 import webbrowser
 import google.generativeai as genai
 
-# Print the environment variable to verify it's being read correctly
 print(f"GOOGLE_API_KEY from environment: {os.getenv('GOOGLE_API_KEY')}")
 
-# Set your API key directly in the script for testing
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 if not GOOGLE_API_KEY:
     raise ValueError("No GOOGLE_API_KEY found. Please set the environment variable or pass the key directly.")
